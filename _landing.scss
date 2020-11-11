@@ -1,0 +1,62 @@
+.landing {
+    height: 100vh;
+    position: relative;
+    background-image: url('/zdjecie\ przyladek.png');
+    background-size: cover;
+    background-position: center;
+    .landing__content {
+        position: absolute;
+        top: 0;
+        left: 15vw;
+        background: rgba($color: #2676A9, $alpha: 0.9);
+        color: #fff;
+        height: 80%;
+        width: 512px;
+        padding: 8.5em 6.25em 0;
+        font-weight: 700;
+        font-family: "Lato";
+        @media (max-width: 700px) {
+            left: 0;
+            height: 100%;
+            width: 100%;
+            font-size: 14px;
+        }
+        @media (max-width: 400px) {
+            font-size: 11px;
+            padding: 6.5em 4.25em 0;
+        }
+        h1 {
+            margin-bottom: 50px;
+            font-size: 4.25em;
+            color: #ffffff;
+            text-align: center;
+        }
+        p {
+            font-size: 1.8125em;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 40px;
+            line-height: 2.1rem;
+        }
+        .landing__btn {
+            width: 220px;
+            height: 52px;
+            background: #ffffff;
+            border-radius: 34px;
+            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            color: #c40040;
+            font-size: 25px;
+            text-decoration: none;
+            margin-bottom: 33px;
+        }
+        h2 {
+            color: #ffffff;
+            text-align: center;
+            font-size: 2.375em;
+        }
+    }
+}
