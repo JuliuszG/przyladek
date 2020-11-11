@@ -269,7 +269,7 @@ header .--open {
 
 @media (max-width: 550px) {
   .about {
-    padding: 100px 20px;
+    padding: 100px 20px 50px;
   }
 }
 
@@ -630,5 +630,99 @@ header .--open {
   .video .video__container .video__content .video__btn {
     width: 280px;
   }
+}
+
+.forParents {
+  padding: 110px 0;
+  font-family: "Lato";
+}
+
+@media (max-width: 700px) {
+  .forParents {
+    padding: 80px 20px;
+  }
+}
+
+.forParents h3 {
+  color: #8f989d;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.3125em;
+  margin-bottom: 41px;
+  text-align: center;
+}
+
+.forParents h1 {
+  font-size: 2.375em;
+  color: #00abb4;
+  font-weight: 700;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.forParents .forParents__container {
+  max-width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+  .forParents .forParents__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 1100px) {
+  .forParents .forParents__container .forParents__child {
+    display: none;
+  }
+}
+
+.forParents .forParents__column .forParents__box {
+  width: 335px;
+  height: 240px;
+  text-align: center;
+}
+
+@media (max-width: 350px) {
+  .forParents .forParents__column .forParents__box {
+    width: 280px;
+  }
+}
+
+.forParents .forParents__column .forParents__box img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.forParents .forParents__column .forParents__box h2 {
+  color: #00abb4;
+  font-weight: 700;
+  font-size: 1.3125em;
+  margin: 15px 0 0;
+}
+
+.forParents .forParents__column .forParents__box p {
+  color: #505559;
+  font-weight: 700;
+  font-family: "Lato";
+  font-size: 0.875em;
+  line-height: 24px;
 }
 /*# sourceMappingURL=main.css.map */
