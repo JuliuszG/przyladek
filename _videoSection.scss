@@ -1,15 +1,82 @@
 .video {
     background: #DEF0F0;
     padding: 170px 0;
+    font-family: "Lato";
+    @media (max-width: 600px) {
+        padding: 85px 20px;
+    }
     .video__container {
         max-width: 1100px;
         margin: 0 auto;
         display: flex;
+        justify-content: space-between;
+        @media (max-width: 1190px) {
+            max-width: 100%;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
         .video__bg {
             width: 510px;
             height: 285px;
             background: #fff;
             box-shadow: -4px 4px rgba($color: #505559, $alpha: 0.5);
+            @media (max-width: 1190px) {
+                margin-bottom: 51px;
+            }
+            @media (max-width: 600px) {
+                width: 100%;
+            }
+        }
+        .video__content {
+            max-width: 512px;
+            @media (max-width: 1190px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            h3{
+                color: #8f989d;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 1.3125em;
+                margin-bottom: 37px;
+            }
+            h1 {
+                font-size: 2.375em;
+                color: #4f5559;
+                font-weight: 700;
+                margin-bottom: 57px;
+                width: 60%;
+                @media (max-width: 600px) {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            p {
+                color: #505559;
+                font-weight: 700;
+                font-size: 1.0625em;
+                line-height: 25px;
+                margin-bottom: 51px; 
+            }
+            .video__btn {
+                width: 335px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+                color: #c40040;
+                font-weight: 700;
+                border: 2px solid #c40040;
+                text-decoration: none;
+                border-radius: 34px;
+                @media (max-width: 350px) {
+                    width: 280px;
+                }
+            }
         }
     }
 }
