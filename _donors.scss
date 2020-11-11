@@ -1,0 +1,54 @@
+.donors {
+    background: #DADADA;
+    padding: 110px 0 180px;
+    font-family: "Lato";
+    h3 {
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.3125em;
+        margin-bottom: 57px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 2.375em;
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 90px;
+        text-align: center;
+    }
+    .donors__container {
+        max-width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        @media (max-width: 1150px) {
+            max-width: 900px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .donors__box {
+            width: 335px;
+            height: 300px;
+            @media (max-width: 1150px) {
+                margin: 20px;
+            }
+            @media (max-width: 400px) {
+                width: 260px;
+            }
+            .donors__box__bg {
+                background: #ffffff;
+                width: 100%;
+                height: 260px;
+                box-shadow: -4px 4px rgba($color: #505559, $alpha: 0.5);
+            }
+            p{
+                margin-top: 20px;
+                font-size: 17px;
+                line-height: 25px;
+                color: #505559;
+                font-weight: 700;
+            }
+        }
+    }
+}

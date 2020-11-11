@@ -967,4 +967,82 @@ header .--open {
   line-height: 24px;
   margin-top: 5px;
 }
+
+.donors {
+  background: #DADADA;
+  padding: 110px 0 180px;
+  font-family: "Lato";
+}
+
+.donors h3 {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.3125em;
+  margin-bottom: 57px;
+  text-align: center;
+}
+
+.donors h1 {
+  font-size: 2.375em;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.donors .donors__container {
+  max-width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+@media (max-width: 1150px) {
+  .donors .donors__container {
+    max-width: 900px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.donors .donors__container .donors__box {
+  width: 335px;
+  height: 300px;
+}
+
+@media (max-width: 1150px) {
+  .donors .donors__container .donors__box {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .donors .donors__container .donors__box {
+    width: 260px;
+  }
+}
+
+.donors .donors__container .donors__box .donors__box__bg {
+  background: #ffffff;
+  width: 100%;
+  height: 260px;
+  -webkit-box-shadow: -4px 4px rgba(80, 85, 89, 0.5);
+          box-shadow: -4px 4px rgba(80, 85, 89, 0.5);
+}
+
+.donors .donors__container .donors__box p {
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 25px;
+  color: #505559;
+  font-weight: 700;
+}
 /*# sourceMappingURL=main.css.map */
