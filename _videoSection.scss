@@ -1,0 +1,15 @@
+.video {
+    background: #DEF0F0;
+    padding: 170px 0;
+    .video__container {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        .video__bg {
+            width: 510px;
+            height: 285px;
+            background: #fff;
+            box-shadow: -4px 4px rgba($color: #505559, $alpha: 0.5);
+        }
+    }
+}

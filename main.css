@@ -196,9 +196,9 @@ header .--open {
   left: 15vw;
   background: rgba(38, 118, 169, 0.9);
   color: #fff;
-  height: 80%;
+  height: 620px;
   width: 512px;
-  padding: 8.5em 6.25em 0;
+  padding: 6.5em 6.25em 0;
   font-weight: 700;
   font-family: "Lato";
 }
@@ -377,7 +377,7 @@ header .--open {
 
 .ourClinic {
   padding: 125px 0 180px;
-  background: #DEF0F0;
+  background: #F3F9F9;
   font-family: "Lato";
 }
 
@@ -489,5 +489,26 @@ header .--open {
   height: 88px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.video {
+  background: #DEF0F0;
+  padding: 170px 0;
+}
+
+.video .video__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.video .video__container .video__bg {
+  width: 510px;
+  height: 285px;
+  background: #fff;
+  -webkit-box-shadow: -4px 4px rgba(80, 85, 89, 0.5);
+          box-shadow: -4px 4px rgba(80, 85, 89, 0.5);
 }
 /*# sourceMappingURL=main.css.map */
