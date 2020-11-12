@@ -5,12 +5,15 @@
         padding: 25px 40px 50px;
         font-size: 14px;
     }
-    h1 {
+    h2 {
         font-size: 2.375em;
         line-height: 46px;
         color: #505559;
         font-weight: 700;
         margin-bottom: 45px;
+        &.wydawnictwa {
+            color: #005e9b;
+        }
         @media (max-width: 1150px) {
             font-size: 2.1em;
             line-height: 1.2em;
@@ -64,10 +67,27 @@
             justify-content: center;
         }
         &__left {
-            color: #00acb6;          
+            color: #00acb6; 
+            &.wydawnictwa {
+                color: #005e9b;
+            }         
         }
         &__right {
             color: #4f5559;
         }
+    }
+    &__btn {
+        text-decoration: none;
+        font-size: 21px;
+        color: #005e9b;
+        font-weight: 700;
+        border: 2px solid #005e9b;
+        border-radius: 32px;
+        width: 222px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 46px auto 63px;
     }
 }

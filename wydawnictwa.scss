@@ -1,0 +1,14 @@
+@import './components/reset';
+
+* {
+    box-sizing: border-box;
+}
+
+@import './components/header';
+@import './components/donors';
+@import './components/partners';
+@import './components/footerTop';
+@import './components/footerBot';
+@import './components/decoration';
+@import './components/article';
+@import './components/books';

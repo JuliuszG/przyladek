@@ -399,7 +399,7 @@ header .--open {
   text-align: center;
 }
 
-.ourClinic h1 {
+.ourClinic h2 {
   font-size: 2.375em;
   color: #00abb4;
   font-weight: 700;
@@ -583,7 +583,7 @@ header .--open {
   margin-bottom: 37px;
 }
 
-.video .video__container .video__content h1 {
+.video .video__container .video__content h2 {
   font-size: 2.375em;
   color: #4f5559;
   font-weight: 700;
@@ -592,7 +592,7 @@ header .--open {
 }
 
 @media (max-width: 600px) {
-  .video .video__container .video__content h1 {
+  .video .video__container .video__content h2 {
     width: 100%;
     text-align: center;
   }
@@ -652,7 +652,7 @@ header .--open {
   text-align: center;
 }
 
-.forParents h1 {
+.forParents h2 {
   font-size: 2.375em;
   color: #00abb4;
   font-weight: 700;
@@ -747,7 +747,7 @@ header .--open {
   text-align: center;
 }
 
-.cured h1 {
+.cured h2 {
   font-size: 2.375em;
   color: #4f5559;
   font-weight: 700;
@@ -838,6 +838,7 @@ header .--open {
   font-size: 1.4375em;
   color: #4f5559;
   font-weight: 700;
+  margin: 0;
 }
 
 .cured .cured__container .cured__box h2:first-of-type {
@@ -875,7 +876,7 @@ header .--open {
   text-align: center;
 }
 
-.info h1 {
+.info h2 {
   font-size: 2.375em;
   color: #fff;
   font-weight: 700;
@@ -983,7 +984,7 @@ header .--open {
   text-align: center;
 }
 
-.donors h1 {
+.donors h2 {
   font-size: 2.375em;
   color: #fff;
   font-weight: 700;
@@ -1057,16 +1058,16 @@ header .--open {
   }
 }
 
-.partners h1 {
+.partners h2 {
   font-size: 2.375em;
-  color: #000;
+  color: #4f5559;
   font-weight: 700;
   margin-bottom: 90px;
   text-align: center;
 }
 
 @media (max-width: 600px) {
-  .partners h1 {
+  .partners h2 {
     margin-bottom: 30px;
   }
 }
