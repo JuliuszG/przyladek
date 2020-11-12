@@ -556,6 +556,13 @@ header .--open {
   }
 }
 
+.article__mainImage {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 0 40px;
+}
+
 .article h2 {
   font-size: 2.375em;
   line-height: 46px;
@@ -566,6 +573,10 @@ header .--open {
 
 .article h2.wydawnictwa {
   color: #005e9b;
+}
+
+.article h2.patient {
+  color: #28b5e5;
 }
 
 @media (max-width: 1150px) {
@@ -655,6 +666,10 @@ header .--open {
 
 .article__header__left.wydawnictwa {
   color: #005e9b;
+}
+
+.article__header__left.patient {
+  color: #28b5e5;
 }
 
 .article__header__right {
