@@ -1,0 +1,18 @@
+.decoration {
+    display: block;
+    height: 100px;
+    background-image: url('../images/zdjecie\ przyladek.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba($color: #46BFC7, $alpha: 0.7);
+    }
+}
