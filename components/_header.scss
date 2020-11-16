@@ -41,7 +41,7 @@ header{
     .header__navigation {
         display: flex;
         .header__navigation__item{
-            border-right: 2px solid #505559;
+            border-right: 2px solid #CDCECF;
             padding: 0 1vw;
             @media (max-width: 1050px){
                border: none;
@@ -55,7 +55,7 @@ header{
             font-family: 'Lato', sans-serif;
             text-decoration: none;
             text-transform: uppercase;
-            color: #505559;
+            color: #B1B3B4;
             font-weight: 700;
             font-size: 1.0625em;
             @media (max-width: 1300px){

@@ -125,7 +125,7 @@ header .header__navigation {
 }
 
 header .header__navigation .header__navigation__item {
-  border-right: 2px solid #505559;
+  border-right: 2px solid #CDCECF;
   padding: 0 1vw;
 }
 
@@ -144,7 +144,7 @@ header .header__navigation .header__navigation__link {
   font-family: 'Lato', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  color: #505559;
+  color: #B1B3B4;
   font-weight: 700;
   font-size: 1.0625em;
 }

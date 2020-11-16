@@ -125,7 +125,7 @@ header .header__navigation {
 }
 
 header .header__navigation .header__navigation__item {
-  border-right: 2px solid #505559;
+  border-right: 2px solid #CDCECF;
   padding: 0 1vw;
 }
 
@@ -144,7 +144,7 @@ header .header__navigation .header__navigation__link {
   font-family: 'Lato', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  color: #505559;
+  color: #B1B3B4;
   font-weight: 700;
   font-size: 1.0625em;
 }
@@ -733,7 +733,7 @@ header .--open {
 
 @media (max-width: 650px) {
   .cured {
-    padding: 100px 20px;
+    padding: 100px 0;
   }
 }
 
@@ -788,25 +788,20 @@ header .--open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   margin: 0 auto 70px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-@media (max-width: 1100px) {
-  .cured .cured__container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 .cured .cured__container .cured__box {
-  width: 330px;
-  height: 450px;
+  width: 320px;
+  margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -833,7 +828,6 @@ header .--open {
 @media (max-width: 350px) {
   .cured .cured__container .cured__box {
     width: 280px;
-    height: 490px;
   }
 }
 

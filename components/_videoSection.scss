@@ -56,7 +56,7 @@
             }
             p {
                 color: #505559;
-                font-weight: 700;
+                font-weight: 400;
                 font-size: 1.0625em;
                 line-height: 25px;
                 margin-bottom: 51px; 
@@ -73,6 +73,11 @@
                 border: 2px solid #c40040;
                 text-decoration: none;
                 border-radius: 34px;
+                transition: .25s ease-in-out;
+                &:hover {
+                    background: #c40040;
+                    color: #fff;
+                }
             }
         }
     }

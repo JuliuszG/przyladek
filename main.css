@@ -125,7 +125,7 @@ header .header__navigation {
 }
 
 header .header__navigation .header__navigation__item {
-  border-right: 2px solid #505559;
+  border-right: 2px solid #CDCECF;
   padding: 0 1vw;
 }
 
@@ -144,7 +144,7 @@ header .header__navigation .header__navigation__link {
   font-family: 'Lato', sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  color: #505559;
+  color: #B1B3B4;
   font-weight: 700;
   font-size: 1.0625em;
 }
@@ -197,7 +197,7 @@ header .--open {
   background: rgba(38, 118, 169, 0.9);
   color: #fff;
   width: 512px;
-  padding: 8.5em 6.25em 4em;
+  padding: 8.5em 6.25em 5.4375em;
   font-weight: 700;
   font-family: "Lato";
 }
@@ -207,7 +207,6 @@ header .--open {
     left: 0;
     height: 100%;
     width: 100%;
-    font-size: 14px;
   }
 }
 
@@ -216,30 +215,47 @@ header .--open {
     left: 0;
     height: 100%;
     width: 100%;
-    font-size: 14px;
+    padding: 4.5em 8% 2.4375em;
   }
 }
 
 @media (max-width: 400px) {
   .landing .landing__content {
-    font-size: 11px;
-    padding: 6.5em 4.25em 0;
+    padding: 4.5em 4% 2.4375em;
   }
 }
 
 .landing .landing__content h1 {
   margin-bottom: 50px;
-  font-size: 4.25em;
+  font-size: 63px;
+  line-height: 94px;
   color: #ffffff;
   text-align: center;
 }
 
+@media (max-width: 500px) {
+  .landing .landing__content h1 {
+    font-size: 43px;
+    line-height: 60px;
+  }
+}
+
 .landing .landing__content p {
-  font-size: 1.8125em;
+  font-size: 20px;
   color: #ffffff;
   text-align: center;
   margin-bottom: 40px;
-  line-height: 2.1rem;
+  line-height: 30px;
+}
+
+.landing .landing__content .btn__cnt {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .landing .landing__content .landing__btn {
@@ -247,27 +263,32 @@ header .--open {
   background: #ffffff;
   border-radius: 34px;
   display: block;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: inline-block;
   margin: 0 auto;
   color: #c40040;
   font-size: 25px;
   text-decoration: none;
   margin-bottom: 33px;
   text-align: center;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.landing .landing__content .landing__btn:hover {
+  background: #c40040;
+  color: #fff;
 }
 
 .landing .landing__content h2 {
   color: #ffffff;
   text-align: center;
-  font-size: 2.375em;
+  font-size: 38px;
+}
+
+@media (max-width: 500px) {
+  .landing .landing__content h2 {
+    font-size: 20px;
+  }
 }
 
 .about {
@@ -342,10 +363,14 @@ header .--open {
 
 .about .about__container .about__content__left p {
   color: #505559;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.0625em;
   line-height: 25px;
   margin-bottom: 90px;
+}
+
+.about .about__container .about__content__left p strong {
+  font-weight: 700;
 }
 
 @media (max-width: 550px) {
@@ -385,6 +410,7 @@ header .--open {
 .about .about__container .about__content__left .about__paragraph__with__picture p small {
   margin-top: 35px;
   display: block;
+  font-weight: 700;
 }
 
 .ourClinic {
@@ -607,7 +633,7 @@ header .--open {
 
 .video .video__container .video__content p {
   color: #505559;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.0625em;
   line-height: 25px;
   margin-bottom: 51px;
@@ -631,6 +657,13 @@ header .--open {
   border: 2px solid #c40040;
   text-decoration: none;
   border-radius: 34px;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.video .video__container .video__content .video__btn:hover {
+  background: #c40040;
+  color: #fff;
 }
 
 .forParents {
@@ -655,7 +688,7 @@ header .--open {
 
 .forParents h2 {
   font-size: 2.375em;
-  color: #00abb4;
+  color: #25B3E5;
   font-weight: 700;
   margin-bottom: 70px;
   text-align: center;
@@ -686,7 +719,11 @@ header .--open {
 }
 
 .forParents .forParents__container .forParents__child {
-  width: 500px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media (max-width: 1100px) {
@@ -699,6 +736,7 @@ header .--open {
   width: 335px;
   padding: 20px 0;
   text-align: center;
+  margin: 50px;
 }
 
 @media (max-width: 350px) {
@@ -716,7 +754,7 @@ header .--open {
 }
 
 .forParents .forParents__column .forParents__box h2 {
-  color: #00abb4;
+  color: #25B3E5;
   font-weight: 700;
   font-size: 1.3125em;
   margin: 15px 0 0;
@@ -744,7 +782,7 @@ header .--open {
 
 @media (max-width: 650px) {
   .cured {
-    padding: 100px 20px;
+    padding: 100px 0;
   }
 }
 
@@ -799,25 +837,20 @@ header .--open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   margin: 0 auto 70px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-@media (max-width: 1100px) {
-  .cured .cured__container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 .cured .cured__container .cured__box {
-  width: 330px;
-  height: 450px;
+  width: 320px;
+  margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -844,7 +877,6 @@ header .--open {
 @media (max-width: 350px) {
   .cured .cured__container .cured__box {
     width: 280px;
-    height: 490px;
   }
 }
 
@@ -910,9 +942,12 @@ header .--open {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 @media (max-width: 1100px) {
@@ -927,24 +962,17 @@ header .--open {
   }
 }
 
-@media (max-width: 750px) {
-  .info .info__container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 .info .info__container .info__box {
-  width: 335px;
-  height: 255px;
+  width: 315px;
+  margin: 20px;
+  padding: 20px;
   background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -954,13 +982,11 @@ header .--open {
           flex-direction: column;
   -webkit-box-shadow: -4px 4px rgba(80, 85, 89, 0.5);
           box-shadow: -4px 4px rgba(80, 85, 89, 0.5);
-  margin: 20px 0;
 }
 
 @media (max-width: 400px) {
   .info .info__container .info__box {
     width: 260px;
-    height: 290px;
   }
 }
 

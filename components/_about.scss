@@ -42,10 +42,13 @@
             }
             p {
                 color: #505559;
-                font-weight: 700;
+                font-weight: 400;
                 font-size: 1.0625em;
                 line-height: 25px;
                 margin-bottom: 90px;      
+                strong {
+                    font-weight: 700;
+                }
                 @media (max-width: 550px) {
                     margin-bottom: 60px; 
                 }      
@@ -67,6 +70,7 @@
                 p small {
                     margin-top: 35px;
                     display: block;
+                    font-weight: 700;
                 }
             }
         }

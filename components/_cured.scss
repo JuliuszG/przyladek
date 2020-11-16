@@ -3,7 +3,7 @@
     padding: 120px 0;
     font-family: "Lato";
     @media (max-width: 650px) {
-        padding: 100px 20px;
+        padding: 100px 0;
     }
     h3 {
         color: #8f989d;
@@ -44,15 +44,13 @@
     .cured__container {
         max-width: 1100px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: stretch;
         margin: 0 auto 70px;
         flex-wrap: wrap;
-        @media (max-width: 1100px) {
-            justify-content: center;
-        }
         .cured__box {
-            width: 330px;
-            height: 450px;
+            width: 320px;
+            margin: 20px;
             display: flex;
             padding-top: 35px;
             flex-direction: column;
@@ -65,7 +63,6 @@
             }
             @media (max-width: 350px) {
                 width: 280px;
-                height: 490px;
             }
             img {
                 margin-bottom: 30px;

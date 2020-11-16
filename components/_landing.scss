@@ -11,57 +11,71 @@
         background: rgba($color: #2676A9, $alpha: 0.9);
         color: #fff;
         width: 512px;
-        padding: 8.5em 6.25em 4em;
+        padding: 8.5em 6.25em 5.4375em;
         font-weight: 700;
         font-family: "Lato";
         @media (max-height: 675px) {
             left: 0;
             height: 100%;
             width: 100%;
-            font-size: 14px;
         }
         @media (max-width: 700px) {
             left: 0;
             height: 100%;
             width: 100%;
-            font-size: 14px;
+            padding: 4.5em 8% 2.4375em;
         }
         @media (max-width: 400px) {
-            font-size: 11px;
-            padding: 6.5em 4.25em 0;
+            padding: 4.5em 4% 2.4375em;
         }
         h1 {
             margin-bottom: 50px;
-            font-size: 4.25em;
+            font-size: 63px;
+            line-height: 94px;
             color: #ffffff;
             text-align: center;
+            @media (max-width: 500px) {
+                font-size: 43px;
+                line-height: 60px;
+            }
         }
         p {
-            font-size: 1.8125em;
+            font-size: 20px;
             color: #ffffff;
             text-align: center;
             margin-bottom: 40px;
-            line-height: 2.1rem;
+            line-height: 30px;
+        }
+        .btn__cnt {
+            width: 100%;
+            display: flex;
+            justify-content: center;
         }
         .landing__btn {
             padding: 15px 30px;
             background: #ffffff;
             border-radius: 34px;
             display: block;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: inline-block;
             margin: 0 auto;
             color: #c40040;
             font-size: 25px;
             text-decoration: none;
             margin-bottom: 33px;
             text-align: center;
+            transition: .25s ease-in-out;
+            &:hover {
+                background: #c40040;
+                color: #fff;
+            }
         }
         h2 {
             color: #ffffff;
             text-align: center;
-            font-size: 2.375em;
+            font-size: 38px;
+            @media (max-width: 500px) {
+                font-size: 20px;
+            }
         }
     }
 }
