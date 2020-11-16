@@ -527,7 +527,7 @@ header .--open {
 .decoration {
   display: block;
   height: 100px;
-  background-image: url("../images/zdjecie przyladek.png");
+  background-image: url("../images/zdjecie_przyladek.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -563,7 +563,7 @@ header .--open {
   margin: 0 0 40px;
 }
 
-.article h2 {
+.article h1 {
   font-size: 2.375em;
   line-height: 46px;
   color: #505559;
@@ -571,23 +571,23 @@ header .--open {
   margin-bottom: 45px;
 }
 
-.article h2.wydawnictwa {
+.article h1.wydawnictwa {
   color: #005e9b;
 }
 
-.article h2.patient {
+.article h1.patient {
   color: #28b5e5;
 }
 
 @media (max-width: 1150px) {
-  .article h2 {
+  .article h1 {
     font-size: 2.1em;
     line-height: 1.2em;
   }
 }
 
 @media (max-width: 400px) {
-  .article h2 {
+  .article h1 {
     margin-top: 40px;
     font-size: 1.8em;
     line-height: 1.1em;
@@ -607,6 +607,7 @@ header .--open {
   text-transform: uppercase;
   font-size: 1.0625em;
   color: #505559;
+  font-weight: 700;
 }
 
 .article p {
@@ -830,12 +831,28 @@ header .--open {
   max-width: 1100px;
   margin: 0 auto;
   font-family: "Lato";
+  position: relative;
+  padding: 0 0 300px;
+}
+
+.posts__arrow {
+  width: 68px;
+  position: absolute;
+  bottom: 210px;
+  left: calc(50% - 34px);
+  cursor: pointer;
+}
+
+@media (max-width: 1150px) {
+  .posts__arrow {
+    bottom: 80px;
+  }
 }
 
 @media (max-width: 1150px) {
   .posts {
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 20px 150px;
   }
 }
 
@@ -849,6 +866,10 @@ header .--open {
           justify-content: space-between;
   border-bottom: 2px solid #28b5e5;
   padding: 55px 0 45px;
+}
+
+.posts__post:last-of-type {
+  border: none;
 }
 
 @media (max-width: 650px) {
@@ -916,7 +937,7 @@ header .--open {
   font-size: 17px;
   display: block;
   margin-top: 41px;
-  visibility: hidden;
+  visibility: visible;
 }
 
 @media (max-width: 650px) {
@@ -927,7 +948,7 @@ header .--open {
 }
 
 .posts__content span.open {
-  visibility: visible;
+  visibility: hidden;
 }
 
 .posts__btn {
