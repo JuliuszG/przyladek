@@ -88,18 +88,26 @@
             color: #4f5559;
         }
     }
+    .btn__cnt {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
     &__btn {
         text-decoration: none;
+        text-align: center;
         font-size: 21px;
         color: #005e9b;
         font-weight: 700;
         border: 2px solid #005e9b;
         border-radius: 32px;
-        width: 222px;
-        height: 45px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 15px 30px;
+        display: inline-block;
         margin: 46px auto 63px;
+        transition: .25s ease-in-out;
+        &:hover {
+            background: #005e9b;
+            color: #fff;
+        }
     }
 }

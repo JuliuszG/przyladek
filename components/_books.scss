@@ -57,18 +57,25 @@
         font-weight: 700;
         margin-bottom: 30px;
     }
-    &__btn {
-        width: 235px;
-        height: 43px;
+    .btn__cnt {
+        width: 100%;
         display: flex;
         justify-content: center;
-        align-items: center;
+    }
+    &__btn {
+        padding: 15px 30px;
+        display: inline-block;
+        text-align: center;
         border-radius: 32px;
         font-size: 17px;
         color: #005e9b;
         font-weight: 700;
         text-decoration: none;
         border: 2px solid #005e9b;
-        margin: 0 auto;
+        transition: .25s ease-in-out;
+        &:hover {
+            background: #005e9b;
+            color: #fff;
+        }
     }
 }

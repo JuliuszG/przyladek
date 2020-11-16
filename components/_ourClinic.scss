@@ -24,8 +24,8 @@
         max-width: 1100px;
         display: flex;
         margin: 0 auto;
-        justify-content: space-between;
-        align-items: center;
+        justify-content: center;
+        align-items: stretch;
         flex-wrap: wrap;
         @media (max-width: 1190px) {
             max-width: 1000px;
@@ -35,18 +35,18 @@
         }
         @media (max-width: 650px) {
             max-width: 100%;
-            justify-content: center;
         }
     }
     .ourClinic__box {
         width: 230px;
-        height: 180px;
         background: #ffffff;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         text-align: center;
+        padding: 20px;
+        margin: 20px;
         box-shadow: -4px 4px rgba($color: #505559, $alpha: 0.5);
         @media (max-width: 1050px) {
             margin: 24px;

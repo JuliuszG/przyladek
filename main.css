@@ -422,12 +422,12 @@ header .--open {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -447,15 +447,11 @@ header .--open {
 @media (max-width: 650px) {
   .ourClinic .ourClinic__container {
     max-width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
 .ourClinic .ourClinic__box {
   width: 230px;
-  height: 180px;
   background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -464,13 +460,15 @@ header .--open {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding: 20px;
+  margin: 20px;
   -webkit-box-shadow: -4px 4px rgba(80, 85, 89, 0.5);
           box-shadow: -4px 4px rgba(80, 85, 89, 0.5);
 }
@@ -616,8 +614,8 @@ header .--open {
 }
 
 .video .video__container .video__content .video__btn {
-  width: 335px;
-  height: 50px;
+  text-align: center;
+  padding: 15px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -633,12 +631,6 @@ header .--open {
   border: 2px solid #c40040;
   text-decoration: none;
   border-radius: 34px;
-}
-
-@media (max-width: 350px) {
-  .video .video__container .video__content .video__btn {
-    width: 280px;
-  }
 }
 
 .forParents {
@@ -675,9 +667,12 @@ header .--open {
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
 
 @media (max-width: 1100px) {
@@ -687,10 +682,11 @@ header .--open {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
+}
+
+.forParents .forParents__container .forParents__child {
+  width: 500px;
 }
 
 @media (max-width: 1100px) {
@@ -701,7 +697,7 @@ header .--open {
 
 .forParents .forParents__column .forParents__box {
   width: 335px;
-  height: 240px;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -769,25 +765,33 @@ header .--open {
   text-align: center;
 }
 
-.cured .cured__btn {
-  width: 232px;
-  height: 50px;
+.cured .btn__cnt {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.cured .cured__btn {
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
   border: 2px solid #4f5559;
   color: #4f5559;
   border-radius: 32px;
   font-weight: 700;
   font-size: 1.3125em;
   text-decoration: none;
-  margin: 0 auto;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.cured .cured__btn:hover {
+  background: #4f5559;
+  color: #ffffff;
 }
 
 .cured .cured__container {
@@ -1087,12 +1091,30 @@ header .--open {
 }
 
 .partners .partners__container {
-  max-width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1100px) {
+  .partners .partners__container {
+    max-width: 600px;
+  }
 }
 
 .partners .partners__container img {
-  width: 100%;
+  width: 210px;
+  margin: 20px;
 }
 
 .footer__top {

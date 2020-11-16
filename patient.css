@@ -286,12 +286,30 @@ header .--open {
 }
 
 .partners .partners__container {
-  max-width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1100px) {
+  .partners .partners__container {
+    max-width: 600px;
+  }
 }
 
 .partners .partners__container img {
-  width: 100%;
+  width: 210px;
+  margin: 20px;
 }
 
 .footer__top {
@@ -677,25 +695,34 @@ header .--open {
   color: #4f5559;
 }
 
-.article__btn {
-  text-decoration: none;
-  font-size: 21px;
-  color: #005e9b;
-  font-weight: 700;
-  border: 2px solid #005e9b;
-  border-radius: 32px;
-  width: 222px;
-  height: 45px;
+.article .btn__cnt {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.article__btn {
+  text-decoration: none;
+  text-align: center;
+  font-size: 21px;
+  color: #005e9b;
+  font-weight: 700;
+  border: 2px solid #005e9b;
+  border-radius: 32px;
+  padding: 15px 30px;
+  display: inline-block;
   margin: 46px auto 63px;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.article__btn:hover {
+  background: #005e9b;
+  color: #fff;
 }
 
 .cured {
@@ -727,25 +754,33 @@ header .--open {
   text-align: center;
 }
 
-.cured .cured__btn {
-  width: 232px;
-  height: 50px;
+.cured .btn__cnt {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.cured .cured__btn {
+  padding: 15px 30px;
+  text-align: center;
+  display: inline-block;
   border: 2px solid #4f5559;
   color: #4f5559;
   border-radius: 32px;
   font-weight: 700;
   font-size: 1.3125em;
   text-decoration: none;
-  margin: 0 auto;
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.cured .cured__btn:hover {
+  background: #4f5559;
+  color: #ffffff;
 }
 
 .cured .cured__container {
@@ -960,8 +995,7 @@ header .--open {
   cursor: pointer;
   outline: none;
   border: 2px solid #28b5e5;
-  width: 150px;
-  height: 44px;
+  padding: 10px 30px;
   background: transparent;
   border-radius: 32px;
   -webkit-transition: .3s ease-in-out;

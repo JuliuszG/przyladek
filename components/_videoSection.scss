@@ -62,8 +62,8 @@
                 margin-bottom: 51px; 
             }
             .video__btn {
-                width: 335px;
-                height: 50px;
+                text-align: center;
+                padding: 15px 30px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -73,9 +73,6 @@
                 border: 2px solid #c40040;
                 text-decoration: none;
                 border-radius: 34px;
-                @media (max-width: 350px) {
-                    width: 280px;
-                }
             }
         }
     }

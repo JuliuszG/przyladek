@@ -88,11 +88,9 @@
         font-weight: 700;
     }
     &__btn {
-        width: 157px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        padding: 15px 30px;
+        display: inline-block;
+        text-align: center;
         border-radius: 32px;
         font-size: 17px;
         color: #00acb6;
@@ -100,8 +98,10 @@
         text-decoration: none;
         border: 2px solid #00acb6;
         margin: 0 auto;
-        &.big{
-            width: 245px;
+        transition: .25s ease-in-out;
+        &:hover {
+            background: #00acb6;
+            color: #fff;
         }
     }
 }
