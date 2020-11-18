@@ -125,7 +125,7 @@ header .header__navigation {
 }
 
 header .header__navigation .header__navigation__item {
-  border-right: 2px solid #CDCECF;
+  border-right: 3px solid #CDCECF;
   padding: 0 1vw;
 }
 
@@ -298,8 +298,28 @@ header .--open {
   color: #fff;
 }
 
+.landing .landing__content a {
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 38px;
+}
+
+@media (max-width: 500px) {
+  .landing .landing__content a {
+    font-size: 20px;
+  }
+}
+
+@media (max-height: 675px) {
+  .landing .landing__content a {
+    font-size: 16px;
+  }
+}
+
 .landing .landing__content h2 {
   color: #ffffff;
+  text-decoration: none;
   text-align: center;
   font-size: 38px;
 }

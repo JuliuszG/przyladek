@@ -125,7 +125,7 @@ header .header__navigation {
 }
 
 header .header__navigation .header__navigation__item {
-  border-right: 2px solid #CDCECF;
+  border-right: 3px solid #CDCECF;
   padding: 0 1vw;
 }
 
