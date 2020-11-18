@@ -21,12 +21,23 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        list-style: none;
         @media (max-width: 1100px) {
             max-width: 600px;
         }
-        img {
+        li {
             width: 210px;
+            height: 210px;
             margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
         }
     }
 }

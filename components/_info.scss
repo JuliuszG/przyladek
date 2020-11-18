@@ -42,13 +42,13 @@
             justify-content: flex-start;
             align-items: center;
             flex-direction: column;
-            box-shadow: -4px 4px rgba($color: #505559, $alpha: 0.5);
+            box-shadow: -4px 4px rgba($color: #6E97C2, $alpha: 0.5);
             @media (max-width: 400px) {
                 width: 260px;
             }
             img {
-                width: 120px;
-                height: 120px;
+                width: 100px;
+                height: 100px;
                 object-fit: contain;
                 margin-bottom: 20px;
             }
@@ -61,9 +61,10 @@
             p {
                 color: #505559;
                 font-weight: 700;
-                font-size: 0.875em;
+                font-size: 1em;
                 line-height: 24px;
                 margin-top: 5px;
+                text-align: center;
             }
         }
     }

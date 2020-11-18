@@ -605,6 +605,7 @@ header .--open {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
   }
 }
 
@@ -803,6 +804,14 @@ header .--open {
   text-align: center;
 }
 
+.cured .age {
+  font-size: 23px;
+  color: #4f5559;
+  font-weight: 400;
+  text-align: center;
+  display: block;
+}
+
 .cured .btn__cnt {
   width: 100%;
   display: -webkit-box;
@@ -980,8 +989,8 @@ header .--open {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-shadow: -4px 4px rgba(80, 85, 89, 0.5);
-          box-shadow: -4px 4px rgba(80, 85, 89, 0.5);
+  -webkit-box-shadow: -4px 4px rgba(110, 151, 194, 0.5);
+          box-shadow: -4px 4px rgba(110, 151, 194, 0.5);
 }
 
 @media (max-width: 400px) {
@@ -991,8 +1000,8 @@ header .--open {
 }
 
 .info .info__container .info__box img {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   -o-object-fit: contain;
      object-fit: contain;
   margin-bottom: 20px;
@@ -1008,9 +1017,10 @@ header .--open {
 .info .info__container .info__box p {
   color: #505559;
   font-weight: 700;
-  font-size: 0.875em;
+  font-size: 1em;
   line-height: 24px;
   margin-top: 5px;
+  text-align: center;
 }
 
 .donors {
@@ -1130,6 +1140,7 @@ header .--open {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  list-style: none;
 }
 
 @media (max-width: 1100px) {
@@ -1138,9 +1149,27 @@ header .--open {
   }
 }
 
-.partners .partners__container img {
+.partners .partners__container li {
   width: 210px;
+  height: 210px;
   margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+}
+
+.partners .partners__container li img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .footer__top {
