@@ -27,6 +27,9 @@
             justify-content: center;
             align-items: center;
         }
+        @media (max-width: 700px) {
+            max-width: 300px;
+        }
     }
     .footer__top__content {
         display: flex;

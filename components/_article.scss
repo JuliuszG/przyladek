@@ -77,6 +77,9 @@
         }
         &__left {
             color: #00acb6; 
+            @media (max-width: 550px) {
+                margin-top: 10px;
+            }
             &.wydawnictwa {
                 color: #005e9b;
             }      

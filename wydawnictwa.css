@@ -101,6 +101,7 @@ header .header__hamburger {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  cursor: pointer;
 }
 
 header .header__hamburger span {
@@ -252,6 +253,11 @@ header .--open {
           box-shadow: -4px 4px rgba(80, 85, 89, 0.5);
 }
 
+.donors .donors__container .donors__box .donors__box__bg img {
+  width: 100%;
+  height: auto;
+}
+
 .donors .donors__container .donors__box p {
   margin-top: 20px;
   font-size: 17px;
@@ -380,6 +386,12 @@ header .--open {
   }
 }
 
+@media (max-width: 700px) {
+  .footer__top .footer__top__container {
+    max-width: 300px;
+  }
+}
+
 .footer__top .footer__top__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -475,7 +487,7 @@ header .--open {
 
 .footer__bot {
   background: #005E9C;
-  padding: 10px 0 12px;
+  padding: 25px 0 25px;
   font-family: "Lato";
 }
 
@@ -523,13 +535,22 @@ header .--open {
   .footer__bot .footer__bot__container .footer__bot__copy {
     margin-right: 0;
     text-align: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     padding: 0 50px;
   }
 }
 
 .footer__bot .footer__bot__container .footer__bot__copy span {
   font-size: 2em;
-  margin-right: 10px;
+  margin-right: 1vw;
+}
+
+@media (max-width: 1150px) {
+  .footer__bot .footer__bot__container .footer__bot__copy span {
+    font-size: 15px;
+  }
 }
 
 .footer__bot .footer__bot__container .footer__bot__social {
@@ -551,7 +572,7 @@ header .--open {
 .footer__bot .footer__bot__container .footer__bot__social .footer__findUs {
   position: absolute;
   right: 0;
-  top: -40px;
+  top: -60px;
   color: #ffffff;
   font-weight: 700;
 }
@@ -701,6 +722,12 @@ header .--open {
 
 .article__header__left {
   color: #00acb6;
+}
+
+@media (max-width: 550px) {
+  .article__header__left {
+    margin-top: 10px;
+  }
 }
 
 .article__header__left.wydawnictwa {
