@@ -15,6 +15,7 @@
         font-weight: 700;
         font-family: "Lato";
         @media (max-height: 675px) {
+            font-size: 10px;
             left: 0;
             height: 100%;
             width: 100%;
@@ -35,8 +36,15 @@
             color: #ffffff;
             text-align: center;
             @media (max-width: 500px) {
+                position: relative;
+                left: -1px;
                 font-size: 43px;
                 line-height: 60px;
+            }
+            @media (max-height: 675px) {
+                font-size: 43px;
+                line-height: 60px;
+                margin-bottom: 30px;
             }
         }
         p {
@@ -45,6 +53,11 @@
             text-align: center;
             margin-bottom: 40px;
             line-height: 30px;
+            @media (max-height: 675px) {
+                font-size: 16px;
+                line-height: 28px;
+                margin-bottom: 20px;
+            }
         }
         .btn__cnt {
             width: 100%;

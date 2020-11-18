@@ -204,6 +204,7 @@ header .--open {
 
 @media (max-height: 675px) {
   .landing .landing__content {
+    font-size: 10px;
     left: 0;
     height: 100%;
     width: 100%;
@@ -235,8 +236,18 @@ header .--open {
 
 @media (max-width: 500px) {
   .landing .landing__content h1 {
+    position: relative;
+    left: -1px;
     font-size: 43px;
     line-height: 60px;
+  }
+}
+
+@media (max-height: 675px) {
+  .landing .landing__content h1 {
+    font-size: 43px;
+    line-height: 60px;
+    margin-bottom: 30px;
   }
 }
 
@@ -246,6 +257,14 @@ header .--open {
   text-align: center;
   margin-bottom: 40px;
   line-height: 30px;
+}
+
+@media (max-height: 675px) {
+  .landing .landing__content p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
 }
 
 .landing .landing__content .btn__cnt {
@@ -734,7 +753,7 @@ header .--open {
 }
 
 .forParents .forParents__column .forParents__box {
-  width: 335px;
+  width: 300px;
   padding: 20px 0;
   text-align: center;
   margin: 50px;
@@ -758,7 +777,7 @@ header .--open {
   color: #25B3E5;
   font-weight: 700;
   font-size: 1.3125em;
-  margin: 15px 0 0;
+  margin: 15px 0 5px;
 }
 
 .forParents .forParents__column .forParents__box p {
