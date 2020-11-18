@@ -32,9 +32,12 @@
         display: flex;
         @media (max-width: 1150px) {
             margin-right: 0;
-            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        @media (max-width:700px) {
             justify-content: center;
-            align-items: center;
+            text-align: center;
         }
         .footer__top__column {
             display: flex;
@@ -42,9 +45,7 @@
             margin-right: 130px;
             color: #ffffff;
             @media (max-width: 1150px) {
-                margin-right: 0;
-                margin-bottom: 20px;
-                width: 100%;
+                margin: 20px;
             }
             .footer__top__column__adress {
                 margin-bottom: 25px;
