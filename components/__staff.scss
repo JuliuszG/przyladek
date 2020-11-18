@@ -42,7 +42,7 @@
     &__cards {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
         flex-wrap: wrap;
         @media (max-width: 1150px) {
             justify-content: center;
@@ -50,14 +50,13 @@
     }
     &__card {
         width: 335px;
-        height: 523px;
         text-align: center;
+        padding-bottom: 20px;
         @media (max-width: 1150px) {
             margin: 20px;
         }
         @media (max-width: 400px) {
             width: 260px;
-            height: 563px;
         }
         img {
             width: 100%;

@@ -44,7 +44,7 @@
             @media (max-height: 675px) {
                 font-size: 43px;
                 line-height: 60px;
-                margin-bottom: 30px;
+                margin-bottom: 20px;
             }
         }
         p {
@@ -88,6 +88,9 @@
             font-size: 38px;
             @media (max-width: 500px) {
                 font-size: 20px;
+            }
+            @media (max-height: 675px) {
+                font-size: 16px;
             }
         }
     }

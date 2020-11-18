@@ -321,7 +321,6 @@ header .--open {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid black;
 }
 
 .partners .partners__container li img {
@@ -768,6 +767,9 @@ header .--open {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
@@ -783,7 +785,6 @@ header .--open {
 
 .books__box {
   width: 335px;
-  height: 535px;
   font-size: 17px;
   line-height: 22px;
   color: #505559;
