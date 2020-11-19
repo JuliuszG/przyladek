@@ -11,6 +11,10 @@
         justify-content: center;
         align-items: center;
         margin-left: 10px;
+        transition: .25s ease-in-out;
+        &:hover {
+           background: rgba(255, 255, 255, 0.5);
+        }
         img {
             width: 50%;
             object-fit: contain;
